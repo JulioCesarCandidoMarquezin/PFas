@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie Catalog</title>
+        <link rel="stylesheet" href="./carrossel.css" type="text/css">
+        <script src="./carrossel.js"></script>
+    </head>
+<body>
+
+<div id="container">
+    <div id="carousel-controls">
+        <button id="prev-button" onclick="prevMovie()"><</button>
+
+        <div id="movie-carousel-container">
+            <div id="movie-carousel">
+                <!-- Movie cards will be dynamically populated here -->
+            </div>
+        </div>
+
+        <button id="next-button" onclick="nextMovie()">></button>
+    </div>
+
+    <div id="movie-details">
+        <h2 id="movie-title">Filme</h2>
+        <p id="movie-sinopse">Sinopse</p>
+        <p id="movie-date">Data: </p>
+        <p id="movie-duration">Duração: </p>
+        <p id="movie-classification">Classificação indicativa: </p>
+    </div>
+
+    <div id="comments-container">
+        <div class="comment-section">
+            <h3>Comentários</h3>
+            <ul id="comments-list">
+                <!-- Comments will be dynamically populated here -->
+            </ul>
+            <textarea id="comment-input" placeholder="Add a new comment"></textarea>
+            <button onclick="addComment()">Add Comment</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

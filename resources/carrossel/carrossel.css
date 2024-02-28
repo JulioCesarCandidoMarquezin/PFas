@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#movie-carousel-container {
+    size: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#movie-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.movie-card {
+    min-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.movie-card:hover {
+    transform: scale(1.1);
+}
+
+#carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#prev-button,
+#next-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    z-index: 1;
+}
+
+#prev-button { left: 10px; }
+#next-button { right: 10px; }
+
+#prev-button:hover,
+#next-button:hover {
+    background-color: #45a049;
+}
+
+#movie-details {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#comments-container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Adicione estas regras ao seu arquivo carrossel.css */
+
+.comment-section {
+    margin-bottom: 20px;
+}
+
+#comments-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comment-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-item p {
+    margin: 0;
+}
+
+#comment-input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#add-comment-btn {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#movie-details {
+    padding: 10px;
+}
+
+#add-comment-btn:hover {
+    background-color: #45a049;
+}
+
+#movie-carousel-container {
+    width: 100%;
+}
